@@ -4,7 +4,7 @@
 Join-Bot recode in discord.js V13!
 ## Join-Logs Made Simple.
 
-### Commands:
-:soon:
+### Command:
+/join <channelid>: Set’s the join log channel (User running command must have Manage Server permissions!)
 
 ###### Idea By brockbreacher, Recode By MorganRoseYT, Original Bot Code By Yamboy1
