@@ -1,0 +1,19 @@
+{
+  "name": "join-bot-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "brockbreacher, MorganRoseTV",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.6.0",
+    "path": "^0.12.7",
+    "requests": "^0.3.0",
+    "wokcommands": "^1.5.3"
+  }
+}
