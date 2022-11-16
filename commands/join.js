@@ -20,7 +20,7 @@ module.exports = {
         }
     ],
 
-    callback: ({ message, interaction, options }) => {
+    callback: ({ message, interaction }) => {
         if (message) {
             const member = message.member;
             if (member.permissions.has('MANAGE_GUILD' && message.mentions.channels.size === 1 && channel.type === 'text')) {
@@ -47,29 +47,41 @@ module.exports = {
             }
         }
         if (interaction) {
+            if (interaction.guild === null) {
+                interaction.reply('Please run this command in a server!');
+                return "ERROR: Guild is null";
+            }
             const member = interaction.member;
             const channelStr = String(interaction.options.getChannel('channel'));
             const channelID = channelStr.substring(2, channelStr.length - 1);
             const guildID = interaction.guild.id;
             const channel = interaction.guild.channels.cache.get(channelID).type === 'GUILD_TEXT';
-            if (!member.permissions.has('MANAGE_GUILD')) {
-                interaction.reply('You do not have permission to use this command!');
-                return;
-            } else if (!interaction.options.getChannel('channel')) {
-                interaction.reply('Please mention a text channel!');
-                return;
-            } else if (member.permissions.has('MANAGE_GUILD')) {
-                try {
-                    console.log(channel);
-                    writeFileSync(`./guilds/${guildID}`, channelID);
-                    console.log(`INFO: Set ${channelID} as the join channel for ${guildID}`);
-                    interaction.reply("Channel set as join channel");
-                } catch (err) {
-                    console.error(err)
+            try {
+                if (!member.permissions.has('MANAGE_GUILD')) {
+                    interaction.reply('You do not have permission to use this command!');
+                    return;
+                } else if (!interaction.options.getChannel('channel')) {
+                    interaction.reply('Please mention a text channel!');
+                    return;
+                } else if (member.permissions.has('MANAGE_GUILD')) {
+                    try {
+                        console.log('Command run as Interaction');
+                        writeFileSync(`./guilds/${guildID}`, channelID);
+                        console.log(`INFO: Set ${channelID} as the join channel for ${guildID}`);
+                        interaction.reply("Channel set as join channel");
+                    } catch (e) {
+                        console.log(e)
+                        appendFile('log.txt', `${e} \n`, (e) => { if (e) throw e; });
+                        interaction.reply("ERROR: Unknown error");
+                    }
                 }
-            } else {
-                return "ERROR: Unknown error";
+            }
+            catch (e) {
+                console.log(e)
+                appendFile('log.txt', `${e} \n`, (e) => { if (e) throw e; });
+                interaction.reply("ERROR: Unknown error");
             }
         }
     }
 }
+
