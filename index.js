@@ -44,7 +44,14 @@ client.on('ready', () => {
         .setDefaultPrefix(config.prefix)
     console.log('I am ready!')
     client.user.setActivity(config.activity, { type: config.type })
-   
+
+    app.get("/", (req /*Keep req, it is necessary*/, res) => {
+        var date = new Date();
+        var currentDate = date.getMonth() + 1 + "/" + date.getDate() + "/" + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes().toPrecision(2);
+        console.log(currentDate + " | Ping Received");
+        appendFileSync("./logs/ping.txt", `${currentDate} | Ping Received\n`, (err) => { if (err) throw err; });
+        res.sendStatus(200);
+    });
     app.listen(25568);
 });
 
@@ -156,62 +163,6 @@ process.on('unhandledRejection', (err) => {
     console.log(err);
     appendFileSync("./logs/errors.txt", `${err}\n`, (err) => { if (err) throw err; });
 });
-
-try { client.login(config.token); }
-catch (err) { console.error(err); }
-
-    const embed = await createJoinEmbed(member);
-    if (channel) channel.send({ embeds: [embed] });
-})
-
-client.on('guildMemberRemove', async (member) => {
-    const channel = getJoinChannel(member.guild);
-    const embed = await createLeaveEmbed(member);
-    if (channel) channel.send({ embeds: [embed] });
-})
-
-function getJoinChannel(guild) {
-    let channelId;
-    try {
-        channelId = readFileSync("./guilds/" + guild.id, { encoding: "utf8" });
-    } catch (e) {
-        if (e.code === 'ENOENT') {
-            console.log("No join channel found for " + guild.name);
-        }
-
-        console.log(`ERROR: An error occured while fetching the entry for guild ${guild.id}`);
-        return null;
-    }
-    return guild.channels.resolve(channelId)
-}
-
-async function createJoinEmbed(member) {
-    // Make sure the member is actually a GuildMember, and not a partial
-    if (!(member instanceof GuildMember)) return;
-
-    return new MessageEmbed()
-        .setTitle(`Welcome ${member.displayName} To ${member.guild.name}`)
-        .setColor(0x008000)
-        .setDescription(`Welcome To ${member.guild.name}`)
-        .addField("Time Joined:", member.joinedAt.toUTCString())
-        .addField("Account Creation Date", member.user.createdAt.toUTCString())
-        .addField("Total Members", "" + member.guild.memberCount)
-        .setThumbnail(member.user.displayAvatarURL())
-        .setTimestamp();
-}
-
-async function createLeaveEmbed(member) {
-    // Make sure the member is actually a GuildMember, and not a partial
-    if (!(member instanceof GuildMember)) return;
-
-    return new MessageEmbed()
-        .setTitle(`${member.displayName} Left ${member.guild.name}`)
-        .setColor(0xFF0000)
-        .setDescription("Cya")
-        .addField("Total Members", "" + member.guild.memberCount)
-        .setThumbnail(member.user.displayAvatarURL())
-        .setTimestamp();
-}
 
 try { client.login(config.token); }
 catch (err) { console.error(err); }
