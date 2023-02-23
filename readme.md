@@ -10,11 +10,11 @@ Join-Bot recode in discord.js V13!
 
 ###Environment Variables:
 
-TOKEN | Discord Bot Token
-ACTVITY | Bot Activity Message (EX, You Sleep)
-TYPE | The actvity type (LISTENING, WATCHING, PLAYING)
-DEVGUILDID | The guild ID of the dev server (EX, 514101346992128012)
-PREFIX | The prefix of the bot (EX, JB!)
+`TOKEN` | Discord Bot Token
+`ACTVITY` | Bot Activity Message (EX, You Sleep)
+`TYPE` | The actvity type (LISTENING, WATCHING, PLAYING)
+`DEVGUILDID` | The guild ID of the dev server (EX, 514101346992128012)
+`PREFIX` | The prefix of the bot (EX, JB!)
 
 
 ### Command:
