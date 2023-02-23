@@ -8,6 +8,15 @@
 Join-Bot recode in discord.js V13!
 ## Join-Logs Made Simple.
 
+###Environment Variables:
+
+TOKEN | Discord Bot Token
+ACTVITY | Bot Activity Message (EX, You Sleep)
+TYPE | The actvity type (LISTENING, WATCHING, PLAYING)
+DEVGUILDID | The guild ID of the dev server (EX, 514101346992128012)
+PREFIX | The prefix of the bot (EX, JB!)
+
+
 ### Command:
 `/join` [channelid]: Set’s the join log channel (User running command must have Manage Server permissions!)
   
