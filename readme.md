@@ -23,4 +23,4 @@ Join-Bot recode in discord.js V13!
   ### Notes:
   - Make sure to create the following folders in the root of you project folder otherwise the bot will not start: `guild`, `logs`
 
-###### Idea By brockbreacher, Recode By MorganRoseYT, Original Bot Code By Yamboy1
+###### Idea And Dockerization By brockbreacher, Recode By MorganRoseYT, Original Bot Code By Yamboy1
