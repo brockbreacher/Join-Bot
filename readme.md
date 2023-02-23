@@ -20,8 +20,5 @@ Join-Bot recode in discord.js V13!
 
 ### Command:
 `/join` [channelid]: Set’s the join log channel (User running command must have Manage Server permissions!)
-  
-  ### Notes:
-  - Make sure to create the following folders in the root of you project folder otherwise the bot will not start: `guild`, `logs`
 
 ###### Idea And Dockerization By brockbreacher, Recode By MorganRoseYT, Original Bot Code By Yamboy1
