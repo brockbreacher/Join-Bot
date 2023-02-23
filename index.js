@@ -1,7 +1,7 @@
 const { Client, Intents, GuildMember, MessageEmbed } = require('discord.js');
-const config = require('./config.json');
 const path = require('path');
 const WOKCommands = require('wokcommands');
+require('dotenv').config()
 const express = require('express');
 const app = express();
 const { readFileSync, unlinkSync, appendFile, readdirSync, appendFileSync, writeFileSync } = require('fs');
@@ -39,11 +39,11 @@ client.on('ready', () => {
     getFilesInDirectory();
     new WOKCommands(client, {
         commandsDir: path.join(__dirname, 'commands'),
-        testServers: [config.devGuildID],
+        testServers: [process.env.DEVGUILDID],
     })
-        .setDefaultPrefix(config.prefix)
+        .setDefaultPrefix(process.env.PREFIX)
     console.log('I am ready!')
-    client.user.setActivity(config.activity, { type: config.type })
+    client.user.setActivity(process.env.ACTIVITY, { type: process.env.TYPE })
 
     app.get("/", (req /*Keep req, it is necessary*/, res) => {
         var date = new Date();
@@ -164,5 +164,5 @@ process.on('unhandledRejection', (err) => {
     appendFileSync("./logs/errors.txt", `${err}\n`, (err) => { if (err) throw err; });
 });
 
-try { client.login(config.token); }
+try { client.login(process.env.TOKEN); }
 catch (err) { console.error(err); }
