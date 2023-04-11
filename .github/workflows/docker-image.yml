@@ -5,13 +5,9 @@ on:
     branches: [ "docker" ]
   pull_request:
     branches: [ "docker" ]
-
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
 steps:
 - uses: actions/checkout@v2
 - name: Login to GitHub Container Registry
@@ -23,5 +19,4 @@ password: ${{ secrets.PACKAGE_TOKEN }}
 - name: Build the Join-Bot Docker image
 run: |
        docker build . --tag ghcr.io/brockbreacher/join-bot:latest
-       docker run ghcr.io/brockbreacher/join-bot:latest
        docker push ghcr.io/brockbreacher/join-bot:latest
