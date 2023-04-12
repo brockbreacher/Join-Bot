@@ -3,4 +3,33 @@
   "description": "Discord Join-Logs, Made Easy!",
   "repository": "https://github.com/brockbreacher/Join-Bot",
   "logo": "https://brbr.xyz/wp-content/uploads/2021/03/BrockDoorIcon-1.png"
+},
+ "image": "heroku/nodejs",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+ "env": {
+    "TOKEN": {
+      "description": "Discord Bot Token",
+      "required": "true"
+    },
+    "ACTVITY": {
+      "description": "Bot Activity Message (EX, You Sleep)",
+      "required": "true"
+    },
+    "TYPE": {
+      "description": "The actvity type (LISTENING, WATCHING, PLAYING)",
+      "required": "true"
+    },
+    "DEVGUILDID": {
+      "description": "The guild ID of the dev server (EX, 514101346992128012)",
+      "required": "true"
+    },
+"PREFIX": {
+      "description": "The prefix of the bot (EX, JB!)",
+      "required": "true"
+    }
+  }
 }
