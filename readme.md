@@ -22,6 +22,7 @@ Join-Bot recode in discord.js V13!
 `/join` [channelid]: Set’s the join log channel (User running command must have Manage Server permissions!)
 
 ### Quick Deploy:
+[![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button-v2.svg)](https://glitch.com/edit/#!/remix/brockbreacher-join-bot)
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brockbreacher/Join-Bot)
 > Note: If you are hosting your bot in heroku, turn off the `web` dyno and turn on the `worker` dyno
 
