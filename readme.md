@@ -9,7 +9,7 @@
 Join-Bot recode in discord.js V13!
 ## Join-Logs Made Simple.
 
-###Environment Variables:
+### Environment Variables:
 
 `TOKEN` | Discord Bot Token<br />
 `ACTVITY` | Bot Activity Message (EX, You Sleep)<br />
