@@ -23,5 +23,4 @@ jobs:
       - name: Build the Join-Bot Docker image
         run: |
           docker build . --tag ghcr.io/brockbreacher/join-bot:latest
-          docker run ghcr.io/brockbreacher/join-bot:latest
           docker push ghcr.io/brockbreacher/join-bot:latest
