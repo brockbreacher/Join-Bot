@@ -21,4 +21,7 @@ Join-Bot recode in discord.js V13!
 ### Command:
 `/join` [channelid]: Set’s the join log channel (User running command must have Manage Server permissions!)
 
+### Quick Deploy:
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brockbreacher/Join-Bot)
+
 ###### Idea And Dockerization By brockbreacher, Recode By MorganRoseYT, Original Bot Code By Yamboy1
