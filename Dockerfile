@@ -8,6 +8,6 @@ RUN chown -R node /usr/src/app
 RUN adduser -D container
 USER container
 ENV USER=container HOME=/home/container
-RUN mkdir /home/container
+RUN mkdir -p /home/container
 WORKDIR /home/container
 CMD ["node", "index.js"]
