@@ -4,9 +4,9 @@ WORKDIR /usr/src/app
 COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 RUN npm install --production --silent && mv node_modules ../
 COPY index.js /home/container
-COPY . .
 RUN chown -R node /usr/src/app
 USER container
 ENV USER=container HOME=/home/container
+RUN mkdir /home/container
 WORKDIR /home/container
 CMD ["node", "index.js"]
