@@ -25,8 +25,7 @@ client.on("ready", () => {
   getFilesInDirectory();
   new WOKCommands(client, {
     commandsDir: path.join(__dirname, "commands"),
-    testServers: [process.env.DEVGUILDID],
-  }).setDefaultPrefix(process.env.PREFIX);
+  })
   console.log("I am ready!");
   client.user.setActivity(process.env.ACTIVITY, { type: process.env.TYPE });
   client.shard.fetchClientValues("guilds.cache.size").then(console.log);
