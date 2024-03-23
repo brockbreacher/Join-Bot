@@ -14,8 +14,6 @@ Join-Bot recode in discord.js V13!
 `TOKEN` | Discord Bot Token<br />
 `ACTVITY` | Bot Activity Message (EX, You Sleep)<br />
 `TYPE` | The actvity type (LISTENING, WATCHING, PLAYING)<br />
-`DEVGUILDID` | The guild ID of the dev server (EX, 514101346992128012)<br />
-`PREFIX` | The prefix of the bot (EX, JB!)<br />
 
 
 ### Command:
