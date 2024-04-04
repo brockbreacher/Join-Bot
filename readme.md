@@ -9,6 +9,8 @@
 Join-Bot recode in discord.js V13!
 ## Join-Logs Made Simple.
 
+![Example Join-Logs](https://raw.githubusercontent.com/brockbreacher/images-for-projects/main/Screenshot_20240323_230601.jpg)
+
 ### Environment Variables:
 
 `TOKEN` | Discord Bot Token<br />
