@@ -1,6 +1,7 @@
 const { Client, Intents, GuildMember, MessageEmbed } = require("discord.js");
 const path = require("path");
 const WOKCommands = require("wokcommands");
+const indexjs = require('./index.js');
 require("dotenv").config();
 const {
   readFileSync,
