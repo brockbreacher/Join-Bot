@@ -3,6 +3,8 @@ const { ShardingManager } = require("discord.js");
 const express = require("express");
 const app = express();
 
+console.log("index.js loaded"):
+
 const manager = new ShardingManager("./bot.js", {
   token: process.env.TOKEN,
 });
