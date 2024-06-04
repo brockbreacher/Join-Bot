@@ -13,9 +13,12 @@ Join-Bot recode in discord.js V13!
 
 ### Environment Variables:
 
-`TOKEN` | Discord Bot Token<br />
-`ACTVITY` | Bot Activity Message (EX, You Sleep)<br />
-`TYPE` | The actvity type (LISTENING, WATCHING, PLAYING)<br />
+`TOKEN` | Discord Bot Token
+
+`ACTVITY` | Bot Activity Message (EX, You Sleep)
+
+`TYPE` | The actvity type (LISTENING, WATCHING, PLAYING)
+
 
 
 ### Command:
