@@ -2,3 +2,4 @@
 config.json
 /guilds/*
 /node_modules/*
+/.vscode
