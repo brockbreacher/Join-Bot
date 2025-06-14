@@ -1,21 +1,14 @@
 {
-  "name": "join-bot-2",
-  "version": "2.0.0",
+  "name": "join-bot-3",
+  "version": "3.0.0",
   "description": "Discord Join-Logs, Made Easy!",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
-  },
+  "scripts": {},
   "keywords": [],
-  "author": "brockbreacher, MorganRoseTV, YamBoy1",
+  "author": "brockbreacher, MorganRoseTV, YamGirl1",
   "license": "MIT",
   "dependencies": {
-    "discord.js": "^13.6.0",
-    "dotenv": "16.4.5",
-    "express": "^4.19.2",
-    "path": "^0.12.7",
-    "requests": "^0.3.0",
-    "wokcommands": "^1.5.3"
+    "discord.js": "^14.19.3",
+    "dotenv": "^16.5.0"
   }
 }
