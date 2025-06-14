@@ -1,3 +1,6 @@
+# **FOR ARCHIVE PURPOSES ONLY, NO LONGER SUPPORTED, USE THE [MAIN BRANCH/V14](https://github.com/brockbreacher/join-bot)**
+
+
 # Join-Bot V13
 ![Discord Bots](https://top.gg/api/widget/servers/752242020864753795.svg) ![Discord Shield](https://discord.com/api/guilds/514101346992128012/widget.png?style=shield) ![Unraid](https://img.shields.io/badge/unraid-%23F15A2C.svg?style=for-the-badge&logo=unraid&logoColor=white)
 
