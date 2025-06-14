@@ -29,4 +29,4 @@ Join-Bot recode in discord.js V13!
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brockbreacher/Join-Bot)
 > Note: If you are hosting your bot in heroku, turn off the `web` dyno and turn on the `worker` dyno
 >
-###### Idea And Dockerization By brockbreacher, Recode By MorganRoseYT, Original Bot Code By Yamboy1
+###### Idea And Dockerization By brockbreacher, Recode By MorganRoseYT, Original Bot Code By YamGirl1
