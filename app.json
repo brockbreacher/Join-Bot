@@ -14,7 +14,7 @@
         "description": "Discord Bot Token",
         "required": "true"
       },
-      "ACTVITY": {
+      "ACTIVITY": {
         "description": "Bot Activity Message (EX, You Sleep)",
         "required": "true"
       },
