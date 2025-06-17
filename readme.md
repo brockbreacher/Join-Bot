@@ -26,7 +26,7 @@ The bot requires the following permissions to function properly:
 - Use Application Commands
 - Send Messages
 
-You can also use the [Cardboard Services Bot Invite Generator](https://jbinvite.cardboards.net/) to generate an invite link with these permissions automatically.
+You can also use the [Cardboard Services Bot Invite Generator](https://invite.cardboards.net/) to generate an invite link with these permissions automatically.
 
 ### Command:
 `/join` [channelid]: Sets the join log channel (User running command must have Manage Server permissions!)
