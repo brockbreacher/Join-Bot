@@ -15,14 +15,21 @@ Join-Bot recode in discord.js V14!
 
 `TOKEN` | Discord Bot Token
 
-`ACTVITY` | Bot Activity Message (EX, You Sleep)
+`ACTIVITY` | Bot Activity Message (EX, You Sleep)
 
-`TYPE` | The actvity type (LISTENING, WATCHING, PLAYING)
+`TYPE` | The Activity type (LISTENING, WATCHING, PLAYING)
 
+### Required Permissions:
+The bot requires the following permissions to function properly:
+- Embed Links
+- View Messages
+- Use Application Commands
+- Send Messages
 
+You can also use the [Cardboard Services Bot Invite Generator](https://jbinvite.cardboards.net/) to generate an invite link with these permissions automatically.
 
 ### Command:
-`/join` [channelid]: Set’s the join log channel (User running command must have Manage Server permissions!)
+`/join` [channelid]: Sets the join log channel (User running command must have Manage Server permissions!)
 
 ### Quick Deploy:
 [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button-v2.svg)](https://glitch.com/edit/#!/remix/brockbreacher-join-bot)
