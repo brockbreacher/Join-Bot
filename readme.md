@@ -3,7 +3,7 @@
 
 ![GitHub](https://img.shields.io/github/license/brockbreacher/join-bot) ![Status](https://status.brbr.xyz/api/badge/12/status) ![24HourUptime](https://status.brbr.xyz/api/badge/12/uptime/24) ![30DayUptime](https://status.brbr.xyz/api/badge/12/uptime/720?label=30&labelSuffix=d) 
 
-[Invite Me](https://discord.com/api/oauth2/authorize?client_id=752242020864753795&permissions=2147503232&scope=bot%20applications.commands)  [Support Server](https://discord.gg/SWTseD7)
+[Invite Me](https://discord.com/oauth2/authorize?client_id=752242020864753795)  [Support Server](https://discord.gg/SWTseD7)
 
 
 Join-Bot recode in discord.js V14!
@@ -23,7 +23,6 @@ Join-Bot recode in discord.js V14!
 The bot requires the following permissions to function properly:
 - Embed Links
 - View Messages
-- Use Application Commands
 - Send Messages
 
 You can also use the [Cardboard Services Bot Invite Generator](https://invite.cardboards.net/) to generate an invite link with these permissions automatically.
