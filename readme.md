@@ -35,4 +35,4 @@ You can also use the [Cardboard Services Bot Invite Generator](https://invite.ca
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/brockbreacher/Join-Bot)
 > Note: If you are hosting your bot in heroku, turn off the `web` dyno and turn on the `worker` dyno
 >
-###### V14 Recode. Original Idea, and Dockerization By brockbreacher, v13 Recode By MorganRoseYT, Original Bot Code By YamGirl1
+###### V14 Recode, Original Idea, and Dockerization By brockbreacher, v13 Recode By MorganRoseYT, Original Bot Code By YamGirl
