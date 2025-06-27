@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: join-bot
+    runtime: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: TOKEN
+        description: "Your Discord bot token (get it from https://discord.com/developers)"
+        required: true
+      - key: ACTIVITY
+        description: "Bot's status message (e.g., 'new members')"
+        value: "new members"
+        required: false
