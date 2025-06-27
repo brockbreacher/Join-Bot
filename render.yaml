@@ -6,9 +6,8 @@ services:
     startCommand: node index.js
     envVars:
       - key: TOKEN
+        value: ""  
         description: "Your Discord bot token (get it from https://discord.com/developers)"
-        required: true
       - key: ACTIVITY
-        description: "Bot's status message (e.g., 'new members')"
         value: "new members"
-        required: false
+        description: "Bot's status message (e.g., 'new members')"
