@@ -1,7 +1,0 @@
-services:
-  - name: join-bot
-    env:
-      - name: TOKEN
-        secret: true  # Marks it as sensitive (users must fill it)
-      - name: ACTIVITY
-        value: "new members"  # Default value
