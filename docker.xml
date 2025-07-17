@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>join-bot</Name>
+  <Repository>ghcr.io/brockbreacher/join-bot</Repository>
+  <Registry>https://github.com/brockbreacher/Join-Bot/pkgs/container/join-bot</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/brockbreacher/Join-Bot</Support>
+  <Project>https://github.com/brockbreacher/Join-Bot</Project>
+  <Overview>Discord Join-Logs Made Simple.&#xD;
+&#xD;
+https://github.com/brockbreacher/Join-Bot</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://brbr.xyz/wp-content/uploads/2021/03/BrockDoorIcon-1.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1677188706</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="TOKEN" Target="TOKEN" Default="" Mode="" Description="The Discord Bot Token" Type="Variable" Display="always" Required="true" Mask="true"/>
+  <Config Name="ACTIVITY" Target="ACTIVITY" Default="" Mode="" Description="Bot Activity Message (EX, You Sleep)" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="TYPE" Target="TYPE" Default="PLAYING" Mode="" Description="The activity type (LISTENING, WATCHING, PLAYING)" Type="Variable" Display="always" Required="true" Mask="false"/>
+</Container>
